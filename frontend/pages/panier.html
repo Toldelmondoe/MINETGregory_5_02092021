@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orinoco - Mon panier</title>
+
+    <link rel="stylesheet" type="text/css" href="../assets/style/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../assets/style/css/style.css"/>
+
+    <script src="https://kit.fontawesome.com/0943c6738e.js" crossorigin="anonymous"></script>
+
+    <script src="../assets/js/apiFetch.js" defer></script>
+    <script src="../assets/js/panier.js" defer></script>
+    <script src="../assets/js/clientBuilders.js" defer></script>
+    <script src="../assets/js/pageBuilders.js" defer></script>
+    <script src="../assets/js/functions.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html"><h1>Orinoco</h1></a>
+        </div>
+        <nav>
+            <a href="../index.html" id="return" class="button button--panier"><p>Continuer mes achats</p></a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="title">
+            <h1>Votre panier</h1>
+        </div>
+        <article>
+            <div class="panier">
+                <div class="panier__result">
+                    <div id="list" class="panier__result--list"></div>     
+                    <p class="bold">Montant total TTC : <span id="total">0</span> €</p>
+                    <button class="button button--submit" id="reset">Vider mon panier</button>
+                </div>
+                <div class="panier__form">
+                    <form class="panier__form--field">
+                        <p><label for="lastName"><span class="required">* </span>Nom : </label><br><input type="text" id="lastName" required  maxlength="20" placeholder="Votre nom" class="panier__form--input"/></p>
+                        <p><label for="firstName"><span class="required">* </span>Prénom : </label><br><input type="text" id="firstName" required maxlength="15" placeholder="Votre prénom" class="panier__form--input"/></p>
+                        <p><label for="address"><span class="required">* </span>Adresse : </label><br><input type="text" id="address" required maxlength="35" placeholder="Votre adresse" class="panier__form--input"/></p>
+                        <p><label for="city"><span class="required">* </span>Ville : </label><br><input type="text" id="city" required maxlength="20" placeholder="Votre ville" class="panier__form--input"/></p>
+                        <p><label for="email"><span class="required">* </span>E-mail : </label><br><input type="email" id="email" required placeholder="adresse@exemple.fr" class="panier__form--input"/></p>
+                        <p class="required">Les champs marqués * sont obligatoires.</p>
+                        <p><button id="send" class="button button--submit">Valider ma commande</button></p>
+                    </form>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="logo"><a href="../index.html"><h3>Orinoco</h3></a>
+        <div class="links">
+            <a class="social" href="https://twitter.com/" rel="nofollow" aria-label="Lien Twitter"><img src="../assets/images/twitter.png" alt="Twitter"></a>
+            <a class="social" href="https://fr-fr.facebook.com/" rel="nofollow" aria-label="Lien Facebook"><img src="../assets/images/facebook.png" alt="Facebook"></a>
+            <a class="social" href="https://www.instagram.com/" rel="nofollow" aria-label="Lien Instagram"><img src="../assets/images/instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+    
+</body>
+</html>
