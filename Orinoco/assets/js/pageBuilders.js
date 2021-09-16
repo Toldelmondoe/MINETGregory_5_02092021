@@ -34,6 +34,9 @@ function indexFill() {
         div3.style.fontWeight = "bold";
         div2.appendChild(div3);
     };
+    //MàJ du nombre d'articles du panier
+    let currentScore = document.getElementById("nb-articles");
+    updateNbArticles(currentScore);
 };
 
 //Fonction de création de la page produit
@@ -51,6 +54,9 @@ function productFill() {
     //Configuration de l'Id ours__price, endroit où le prix sera chargé, le prix/100 provient de la BDD à ours.price
     let productPrice = document.getElementById("ours__price");
     productPrice.innerHTML = ours.price/100+" €"; 
+    //MàJ du nombre d'articles du panier
+    let currentScore = document.getElementById("nb-products");
+    updateNbArticles(currentScore);
 };
 
 //Fonction de création du panier
