@@ -48,4 +48,8 @@ onload = function() {
             clearedResult.removeChild(clearedResult.lastElementChild);
         };  
     });
+
+    //REGEX
+    const regexName = /^(([a-zA-ZÀ-ÿ]+[\s\-]{1}[a-zA-ZÀ-ÿ]+)|([a-zA-ZÀ-ÿ]+))$/;
+    const regexMail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]{2,}\.[a-z]{2,4}$/;
 };
