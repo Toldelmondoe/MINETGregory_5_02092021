@@ -294,13 +294,12 @@ footer {
     flex-direction: column;
     max-width: 50%;
     text-align: center;
-    margin: auto;
+    margin: 50px auto 50px auto;
     border: 2px solid #B57643;
     border-radius: 20px;
     padding: 1%;
     background: #B57643;
 }
-
 
 .panier__form {
     width: 60%;
@@ -342,6 +341,9 @@ input:focus {
     margin: 20px auto;
 }
 
+.title {
+    text-align: center;
+}
 
 
 

@@ -62,6 +62,6 @@ onload = async function() {
     }
     catch (e) {
         console.log(e);
-        alert("Chargement de la page impossible. Nous avons actuellement un problème de connexion au serveur. Veuillez réessayer ultérieurement ou contacter nos servieces.");
+        alert("Chargement de la page impossible. Veuillez réessayer ultérieurement.");
     };
 };

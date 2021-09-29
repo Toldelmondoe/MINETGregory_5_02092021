@@ -1,9 +1,9 @@
 //Création d'une méthode object pour le localStorage(stringify et parse auto)
-
+//Convertion JavaScript en chaîne JSON
 Storage.prototype.setObject = function(cle, objet) {
 this.setItem(cle, JSON.stringify(objet));
 };
-   
+//Analyse chaîne JSON et construction de la valeur JavaScript
 Storage.prototype.getObject = function(cle) {
 var valeur = this.getItem(cle);
 return valeur && JSON.parse(valeur);
@@ -70,7 +70,7 @@ updateTeddyNb = function(event, name, color) {
     updateTotalPrice(total);
 };
 
-//Fonctions ADD & DELETE Teddy
+//Fonctions Add & Delete Teddy
 addTeddy = function(ours) {
     if(localStorage.getObject('carts')) {
         let teddies = localStorage.getObject('carts');
@@ -101,4 +101,16 @@ deleteTeddy = function(name, color) {
     else {
         console.log(`no teddy called ${name} in ${color}`);
     };
+};
+
+//Fonction validation formulaire.
+validForm = function(elt) {
+    let valid = document.createElement("span");
+    let validate = document.createElement("i");
+    validate.setAttribute("class", "fas fa-check");
+    elt.insertAdjacentElement('afterend', valid);
+    valid.appendChild(validate);
+    elt.addEventListener("focus", function() {
+        valid.remove();
+    });
 };

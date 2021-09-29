@@ -9,11 +9,11 @@ onload = async function() {
         }
         else {
             console.log("error fetch");
-            alert("Chargement de la page impossible. Nous avons actuellement un problème de connexion au serveur. Veuillez réessayer ultérieurement ou contacter nos services.");
+            alert("Chargement de la page impossible. Veuillez réessayer ultérieurement.");
         };
     }
     catch(e) {
         console.log(e);
-        alert("Chargement de la page impossible. Nous avons actuellement un problème de connexion au serveur. Veuillez réessayer ultérieurement ou contacter nos services.");
+        alert("Chargement de la page impossible. Veuillez réessayer ultérieurement.");
     };
 };
