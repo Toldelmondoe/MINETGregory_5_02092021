@@ -34,7 +34,7 @@ let apiFetchProduct = async function() {
     };
 };
 
-//FONCTION POST 
+//Fonction postOrder 
 let postOrder = async function() {
     try {
         let response = await fetch("http://localhost:3000/api/teddies/order",{

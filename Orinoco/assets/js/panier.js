@@ -38,7 +38,7 @@ onload = function() {
         };
     });
 
-    //Bouton => vider mon panier. Reset complet du panier et du localStorage
+    //Bouton vider mon panier. Reset du panier et du localStorage
     let reset = document.getElementById("reset");
     reset.addEventListener("click", function() {
         localStorage.clear();
@@ -115,7 +115,7 @@ onload = function() {
         //Vérification des données formulaires
         let check = document.getElementsByClassName("alert");
         if (check.length == 0 && contact.lastName != "" && contact.firstName != "" && contact.address != "" && contact.city != "" && contact.email != "") {   
-            //Ajout des articles au tableau products et Màj du localStorage
+            //Ajout des articles au tableau products et MAJ du localStorage
             updateProductsArray();
             updateStorage();
             //Retrait des articles du panier

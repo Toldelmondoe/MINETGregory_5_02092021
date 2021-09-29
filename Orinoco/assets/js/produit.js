@@ -47,7 +47,7 @@ onload = async function() {
             }
         })
 
-        //Gestion du bouton => ajouter au panier
+        //Gestion du bouton ajouter au panier
         let order = document.getElementById("ajout");
         order.addEventListener("click", function(e) {
             let teddy = {
