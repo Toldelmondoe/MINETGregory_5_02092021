@@ -4,7 +4,7 @@ function indexFill() {
         //Création des vignettes contenant les articles
         //Configuration de l'Id index, endroit ou le script sera appliqué 
         let main = document.getElementById("index");
-        //Création d'un lien a class vignette avec récupération de l'id présent sur la BDD au click et retournant cet id sur la page produit 
+        //Création d'un lien a class vignette avec récupération de l'id présent sur la BDD au clique et retournant cet id sur la page produit 
         let link = document.createElement("a");
         link.setAttribute("href", `./pages/produit.html?id=${ours[i]._id}`);
         link.setAttribute("class", "vignette");
@@ -42,17 +42,17 @@ function indexFill() {
 //Fonction de création de la page produit
 function productFill() {
     //Configuration de l'Id ours__imageUrl, endroit où l'image sera chargée, l'image provient de la BDD à ours.imageUrl
-    let productImage = document.getElementById("ours__imageUrl");
+    const productImage = document.getElementById("ours__imageUrl");
     productImage.setAttribute("src", ours.imageUrl);
     productImage.setAttribute("alt", "photo ours");
     //Configuration de l'Id ours__name, endroit où le nom sera chargé, le nom provient de la BDD à ours.name
-    let productName = document.getElementById("ours__name");
+    const productName = document.getElementById("ours__name");
     productName.innerHTML = ours.name;
     //Configuration de l'Id ours__description, endroit où la description sera chargée, la description provient de la BDD à ours.description
-    let productDescript = document.getElementById("ours__description");
+    const productDescript = document.getElementById("ours__description");
     productDescript.innerHTML = ours.description;
     //Configuration de l'Id ours__price, endroit où le prix sera chargé, le prix/100 provient de la BDD à ours.price
-    let productPrice = document.getElementById("ours__price");
+    const productPrice = document.getElementById("ours__price");
     productPrice.innerHTML = ours.price/100+" €"; 
     //MàJ du nombre d'articles du panier
     let currentScore = document.getElementById("nb-products");
