@@ -14,7 +14,7 @@ onload = async function() {
         let colorTitle = document.createElement("label");
         colorTitle.setAttribute("for", "ours_color");
         colorTitle.setAttribute("id", "colorTitle");
-        colorTitle.innerHTML = 'Choisir sa couleur: ';
+        colorTitle.innerHTML = 'Choisir sa couleur : ';
         colorArea.appendChild(colorTitle);
         let colorSelect = document.createElement("select");
         colorSelect.setAttribute("name", "color");
@@ -40,10 +40,10 @@ onload = async function() {
         let productNb = document.getElementById("productNb");
         productNb.addEventListener("change", function() {
             if(productNb.value > 1) {
-                colorTitle.innerHTML = "Choisir leur couleur:";
+                colorTitle.innerHTML = "Choisir leur couleur : ";
             }
             else {
-                colorTitle.innerHTML = "Choisir sa couleur:";
+                colorTitle.innerHTML = "Choisir sa couleur : ";
             }
         })
 
@@ -57,7 +57,7 @@ onload = async function() {
                 name : ours.name,
                 nb : productNb.value,
                 };
-            addTeddy(teddy);      
+                addTeddy(teddy);      
         });
     }
     catch (e) {

@@ -1,3 +1,4 @@
+/* Police */
 @font-face {
     font-family: "belligerent_madnessregular";
     src: url("../../../assets/polices/belligerent-webfont.woff") format("woff");
@@ -5,12 +6,10 @@
     font-style: normal;
 }
 
-
-
+/* Général */
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
-
 h1 {
     font-family: "belligerent_madnessregular", serif;
     font-size: 5em;
@@ -18,13 +17,11 @@ h1 {
     color: black;
     padding: 20px 0 10px 20px;
 }
-
 h2 {
     font-family: "belligerent_madnessregular", serif;
     font-size: 2.5em;
     margin: 10px 0 10px 0;
 }
-
 h3 {
     font-family: "belligerent_madnessregular", serif;
     font-size: 3.2em;
@@ -33,27 +30,22 @@ h3 {
     padding-top: 20px;
     margin-bottom: 10px;
 }
-
 a {
     text-decoration: none;
 }
-
 .bold {
     font-weight: bold;
 }
-
 .maxi {
     font-size: 1.6em;
     font-family: "belligerent_madnessregular", serif;
 }
-
 body {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: auto;
 }
-
 header {
     display: flex;
     flex-direction: row;
@@ -64,7 +56,38 @@ header {
     padding: 30px auto 10px auto;
     background: #B57643;
 }
+main {
+    background: #DDB084;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #B57643;
+    width: 100%;
+    margin: 0;
+}
+.social {
+    text-decoration: none;
+    font-size: 2em;
+    margin-right: 10px;
+}
 
+.links {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.nb-articles {
+    margin-left: 20px;
+}
+/* Navigation */
 nav p {
     font-family: "belligerent_madnessregular";
     font-size: 1.6em;
@@ -72,43 +95,23 @@ nav p {
     padding: 0 20px 0 0;
     font-family: "belligerent_madnessregular";
 }
-
 nav a {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: black;
 }
-
-main {
-    background: #DDB084;
-}
-
-#main {
-    margin-bottom: 40px;
-}
-
-.degrade {
-    height: 7px;
-    width: 100%;
-    background: linear-gradient(#B57643, #565656);
-    border: none;
-    margin: 0;
-}
-
 .banniere {
     width: 100%;
     height: 500px;
     overflow: hidden;
 }
-
 .banniere__txt {
     position: absolute;
     top: 280px;
     max-width: 400px;
     justify-content: center;
 }
-
 .banniere p {
     font-family: "belligerent_madnessregular";
     color: #DDB084;
@@ -116,6 +119,14 @@ main {
     text-align: center;
 }
 
+/* Dégradé */
+.degrade {
+    height: 7px;
+    width: 100%;
+    background: linear-gradient(#B57643, #565656);
+    border: none;
+    margin: 0;
+}
 .degrade2 {
     height: 7px;
     width: 100%;
@@ -123,21 +134,30 @@ main {
     border: none;
     margin: 0;
 }
+.degrade3 {
+    height: 7px;
+    width: 100%;
+    background: linear-gradient(#DDB084, #B57643);
+    border: none;
+    margin: 0;
+}
+.degrade4 {
+    height: 7px;
+    width: 100%;
+    background: linear-gradient(#B57643, #DDB084);
+    border: none;
+    margin: 0;
+}
 
+
+
+/* Page index */
 .produits {
     font-family: "belligerent_madnessregular";
     font-size: 3em;
     text-align: center;
     margin: 40px 0 20px 0;
 }
-
-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-}
-
 .vignette {
     width: 17.5%;
     min-width: 255px;
@@ -152,19 +172,24 @@ section {
     color: white;
     background: #835E43;
 }
-
 .vignette:hover {
     transform: scale(1.05);
     transition: 0.5s;
 }
 
+
+/* Page Produit */
+.ours {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    max-width: 40%;
+}
 .ours__image {
     display: flex;
     object-fit: cover;
-    max-height: 773px;
-    
+    max-height: 773px; 
 }
-
 .vignette__picture {
     display: flex;
     justify-content: center;
@@ -172,65 +197,22 @@ section {
     object-fit: cover;
     box-shadow: 10px 10px 10px 0 #835E43;
 }
-
 .price {
     margin-bottom: 10px;
     font-size: 1.8em;
     text-align: center;
 }
-
 #ours__description {
-    margin: 10px 0 0 0;
+    margin: 0 20px;
 }
-
-.degrade3 {
-    height: 7px;
-    width: 100%;
-    background: linear-gradient(#DDB084, #B57643);
-    border: none;
-    margin: 0;
-}
-
-.degrade4 {
-    height: 7px;
-    width: 100%;
-    background: linear-gradient(#B57643, #DDB084);
-    border: none;
-    margin: 0;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #B57643;
-    width: 100%;
-    margin: 0;
-}
-
-.social {
-    text-decoration: none;
-    font-size: 2em;
-    margin-right: 10px;
-}
-
-.links {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-}
-
-
 #productNb {
     font-size: 0.8em;
     text-align: center;
 }
-
 #ours__color {
     font-size: 0.8em;
     text-align: center;
 }
-
 #ajout {
     width: 40%;
     height: 2em;
@@ -243,42 +225,24 @@ footer {
     cursor: pointer;
     box-shadow: 10px 10px 10px 0 #835E43;
     color: black;
+    padding: 5px;
 }
-
-.nb-articles {
-    margin-left: 20px;
-}
-.ours {
-    display: flex;
-    flex-direction: column;
-    margin: 40px;
-    max-width: 40%;
-}
-
 #ours__name {
     margin-top: 30px;
 }
-
 .ours__caract {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-
 .ours__caract p {
     font-size: 1.4em;
 }
-
-#ours__description {
-    margin: 0 20px;
-}
-
 .product {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-
 .choice {
     width: 60%;
     text-align: center;
@@ -286,18 +250,17 @@ footer {
     font-size: 1.2em;
 }
 
+/* Page panier */
 .required {
     color: #643534;
     font-size: 1.5em;
 }
-
 .panier {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-
 .panier__result {
     display: flex;
     flex-direction: column;
@@ -310,13 +273,11 @@ footer {
     background: #B57643;
     box-shadow: 10px 10px 10px 0 #835E43;
 }
-
 .panier__form {
     width: 60%;
     margin: auto;
     text-align: center;
 }
-
 .panier__form--input {
     width: 40%;
     height: 34px;
@@ -327,7 +288,6 @@ footer {
     line-height: 1.42857143;
     font-size: 1.1em;
 } 
-
 #send {
     width: 40%;
     height: 3em;
@@ -340,21 +300,17 @@ footer {
     cursor: pointer;
     box-shadow: 10px 10px 10px 0 #835E43;
 }
-
 input:focus {
     outline: none;
     border: 3px solid #555;
 }
-
 #reset {
     width: 100%;
     margin: 20px auto;
 }
-
 .title {
     text-align: center;
 }
-
 .payed {
     text-align: center;
     font-weight: bold;

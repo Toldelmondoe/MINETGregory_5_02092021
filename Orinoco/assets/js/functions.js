@@ -1,4 +1,6 @@
+////////////////////////////////////
 //Création d'une méthode object pour le localStorage(stringify et parse auto)
+////////////////////////////////////
 //Convertion JavaScript en chaîne JSON
 Storage.prototype.setObject = function(cle, objet) {
 this.setItem(cle, JSON.stringify(objet));

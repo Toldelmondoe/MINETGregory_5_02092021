@@ -1,3 +1,4 @@
+// Fonction page recap
 onload = function() {
     let total = document.getElementById("totalPrice");
     let id = document.getElementById("server-id");
@@ -8,6 +9,7 @@ onload = function() {
     total.innerHTML = localStorage.getItem("totalPrice");
     id.innerHTML = localStorage.getItem("orderId");
     button.addEventListener('click', function() {
+        //Supression de tous les éléments du localStorage
         localStorage.clear();
     });
 };
